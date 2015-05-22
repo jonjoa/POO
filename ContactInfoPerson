@@ -1,11 +1,159 @@
 import java.io.Serializable;
-
+/**
+	 * 
+	 * 
+	 * @author Jonathan Joaquim
+	 * 14.05.2015
+	 * Contient les informations des contacts
+	 *
+	 */
 
 public class ContactInfoPerson implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	private String prenom;
+	private String nom;
+	private String email;
+	private String numTel;
+	private String adresse;
+	private String NPA;
+	private String dateNaissance;
+	
+	/**Initialisation des variables vides au cas ou aucun paramètre n'est entré.**/
+	public ContactInfoPerson(){
+		prenom="";
+		nom="";
+		email="";
+		numTel="";
+		adresse="";
+		NPA="";
+		dateNaissance="";
+	}
+	
+	/**Initialisation des variables avec paramètres. Chaque paramètre est affecter a la variable internet du contact.
+	 * @param prenom contenu du String prenom que l'on veux insérer
+	 * @param nom contenu du String nom que l'on veux insérer
+	 * @param email contenu du String email que l'on veux insérer
+	 * @param numTel contenu du String numTel que l'on veux insérer
+	 * @param adress contenu du String adress que l'on veux insérer
+	 * @param dateNaissance contenu du String dateNaissance que l'on veux insérer
+	 */
+	
+	public ContactInfoPerson(String prenom, String nom, String email, String numTel, String adresse, String NPA, String dateNaissance){
+		super();
+		this.prenom=prenom;
+		this.nom=nom;
+		this.email=email;
+		this.numTel=numTel;
+		this.adresse=adresse;
+		this.NPA=NPA;
+		this.dateNaissance=dateNaissance;
+	}
+	
+	/**
+	 * Méthode pour récupérer le prenom depuis une autre partie du programme
+	 * @return la valeur du prenom
+	 */
+	public String getPrenom() {
+		return prenom;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier le prenom d'un contact depuis une autre partie du programme
+	 * @param prenom valeur reçue depuis une autre partie du programme
+	 */
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	/**
+	 * Méthode pour récupérer le nom depuis une autre partie du programme
+	 * @return la valeur du nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier la nom d'un contact depuis une autre partie du programme
+	 * @param nom valeur reçue depuis une autre partie du programme
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	/**
+	 * Méthode pour récupérer le mail depuis une autre partie du programme
+	 * @return la valeur de le mail
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier le mail d'un contact depuis une autre partie du programme
+	 * @param mail valeur reçue depuis une autre partie du programme
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	/**
+	 * Méthode pour récupérer le numero de telephone depuis une autre partie du programme
+	 * @return la valeur du numero de telephone
+	 */
+	public String getNumTel() {
+		return numTel;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier le numero de telephone d'un contact depuis une autre partie du programme
+	 * @param numTel valeur reçue depuis une autre partie du programme
+	 */
+	public void setNumTel(String numTel) {
+		this.numTel = numTel;
+	}
+	/**
+	 * Méthode pour récupérer l'adresse depuis une autre partie du programme
+	 * @return la valeur de l'adresse
+	 */
+	public String getAdresse() {
+		return adresse;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier l'adresse d'un contact depuis une autre partie du programme
+	 * @param adresse valeur reçue depuis une autre partie du programme
+	 */
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+	/**
+	 * Méthode pour récupérer le NPA depuis une autre partie du programme
+	 * @return la valeur du NPA
+	 */
+	public String getNPA() {
+		return NPA;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier le NPA d'un contact depuis une autre partie du programme
+	 * @param NPA valeur reçue depuis une autre partie du programme
+	 */
+	public void setNPA(String NPA) {
+		this.NPA = NPA;
+	}
+	/**
+	 * Méthode pour récupérer la date de naissance depuis une autre partie du programme
+	 * @return la valeur de la date de naissance
+	 */
+	public String getDateNaissance() {
+		return dateNaissance;
+	}
+	/**
+	 * Méthode pour initialiser ou modifier la date de naissance d'un contact depuis une autre partie du programme
+	 * @param dateNaissance valeur reçue depuis une autre partie du programme
+	 */
+	public void setDateNaissance(String dateNaissance) {
+		this.dateNaissance = dateNaissance;
+	}
+	
+	
+	
+	
+	
+	
 
+	
 }
